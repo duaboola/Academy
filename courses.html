@@ -1,0 +1,417 @@
+ 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McIndeez Academy</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!--  Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+
+
+      .card .card-img-top {
+        object-fit: cover;
+      }
+      
+         .col-md-4 {
+        margin: 15px ;
+        width:calc(33.333% - 30px); 
+        padding: 0px;
+        }
+
+        @media (max-width: 768px) {
+
+         .col-md-4 {
+        margin: 15px ;
+        width:calc(100% - 30px); 
+        padding: 0px;
+        } 
+        }
+
+        .searchinput {
+        width: 50%;
+        }
+
+        @media (max-width: 768px) {
+
+            .searchinput{
+        width: 70%;
+        } 
+        }
+
+        .course-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* This ensures each card takes the full height of the container */
+}
+
+.card-body {
+    height: 200px; /* Adjust the height as needed */
+    overflow: hidden;
+}
+
+.card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Number of lines to show before truncating */
+    -webkit-box-orient: vertical;
+}
+
+.category-tag {
+  position: absolute;
+  top: 10px; /* Adjust the top position as needed */
+  left: 10px; /* Adjust the left position as needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Background color for the tag */
+  color: white; /* Text color for the tag */
+  padding: 5px 10px; /* Padding for the tag */
+  border-radius: 5px; /* Rounded corners for the tag */
+  font-size: 12px; /* Font size for the tag */
+  z-index: 2; /* Ensure the tag is above the image */
+}
+        
+    </style>
+    
+</head>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top  header-transparent ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html">McIndeez Consultancy</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li class="dropdown"><a href="courses.html"><span>Courses</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>Cybersquare</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>IITM</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <!-- <li><a href="#">Drop Down 2</a></li> -->
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="index.html#features">Associates</a></li>
+          <li><a class="nav-link scrollto" href="index.html#gallery">Testimonials</a></li>
+          <li><a class="nav-link scrollto" href="index.html#pricing"><span id="country">...</span></a></li>
+          <li><a class="getstarted scrollto" href="index.html#features">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2></h2>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Courses</li>
+        </ol>
+      </div>
+
+    </div>
+  </section><!-- End Breadcrumbs -->
+
+  <main id="coursesmain">
+
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <section id="courses" >
+            <div class="section-title">
+                <h2>Courses</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <form class="d-flex justify-content-center p-5" action="search-results.html" method="get">
+                  <div class="searchinput">
+                      <input id="searchInput" class="form-control me-1" type="search" name="query" placeholder="Search" aria-label="Search">
+                  </div>
+                  <button class="btn btn-outline-primary download-btn" type="submit"><i class="bx bx-search"></i> Search</button>
+              </form>
+              
+                <div class="filter-tabs">
+                  <button class="btn btn-outline-secondary filter-tab active" data-category="all">All</button>
+                  <button class="btn btn-outline-secondary filter-tab" data-category="it">IT</button>
+                  <button class="btn btn-outline-secondary filter-tab" data-category="bfsi">BFSI</button>
+                  <button class="btn btn-outline-secondary filter-tab" data-category="Logistics">Logistics</button>
+                  <button class="btn btn-outline-secondary filter-tab" data-category="kids">Kids</button>
+                  <button class="btn btn-outline-secondary filter-tab" data-category="advancedkids">Kids - Advanced</button>
+              </div>
+            </div> 
+            <div class="row no-gutters p-5" id="courseList">
+                
+            </div>
+        </section>
+    </div>
+    
+    
+
+  </main>
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <!-- <div class="footer-newsletter">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <h4>Join Our Newsletter</h4>
+                <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                <form action="" method="post">
+                  <input type="email" name="email"><input type="submit" value="Subscribe">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div> -->
+    
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+    
+              <div class="col-lg-3 col-md-6 footer-contact">
+                <h3>McIndeez Academy</h3>
+                <p>
+                  A108 Adam Street <br>
+                  New York, NY 535022<br>
+                  United States <br><br>
+                  <strong>Phone:</strong> +1 5589 55488 55<br>
+                  <strong>Email:</strong> info@example.com<br>
+                </p>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                </ul>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                </ul>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Our Social Networks</h4>
+                <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                <div class="social-links mt-3">
+                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                  <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+    
+        <!-- <div class="container py-4">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Appland</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+             Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div> -->
+      </footer><!-- End Footer -->
+    
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/aos/aos.js"></script>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+    
+      <!-- Template Main JS File -->
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/country.js"></script>
+      <script src="assets/js/data.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+            
+            document.addEventListener("DOMContentLoaded", function() {
+
+              
+            const courseList = document.getElementById("courseList");
+            var coursesParsed = JSON.parse(courseData);
+
+            if (courseList) {
+                coursesParsed.forEach((course) => {
+
+                  const cardWrapper = document.createElement("div");
+                  cardWrapper.classList.add("col-md-4", "mb-4", "course-card");
+                  cardWrapper.setAttribute("data-category", course.category);
+                  // console.log(course.category);
+
+            const link = document.createElement("a");
+            link.href = `course-details.php?id=${course.id}`;
+            link.classList.add("card-link"); // Add your custom class for styling
+
+            const card = document.createElement("div");
+            card.classList.add("card");
+
+                  const img = document.createElement("img");
+                  img.src = course.cover;
+                  img.classList.add("card-img-top");
+                  img.alt = "Course Image";
+                  
+                   // Create a category tag element
+      const categoryTag = document.createElement("div");
+      categoryTag.classList.add("category-tag");
+      categoryTag.textContent = course.category; // Set the category text
+      img.appendChild(categoryTag); // Append the category tag to the image
+
+                  const cardBody = document.createElement("div");
+            cardBody.classList.add("card-body");
+
+            const cardTitle = document.createElement("h5");
+            cardTitle.classList.add("card-title");
+            cardTitle.textContent = course.title;
+
+            const cardText = document.createElement("p");
+            cardText.classList.add("card-text");
+            cardText.textContent = course.description;
+
+            const ul = document.createElement("ul");
+            ul.classList.add("list-group");
+
+            cardBody.appendChild(cardTitle);
+            cardBody.appendChild(cardText);
+            cardBody.appendChild(ul);
+
+            card.appendChild(img);
+            card.appendChild(cardBody);
+
+            link.appendChild(card); // Wrap the card with the link
+            cardWrapper.appendChild(link); // Wrap the link with the card wrapper
+
+            courseList.appendChild(cardWrapper);
+
+
+                  
+            });
+            }
+
+            const filterTabs = document.querySelectorAll(".filter-tab");
+    const courseItems = document.querySelectorAll(".course-card");
+
+    filterTabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+            // Remove "active" class from all tabs
+            filterTabs.forEach((t) => t.classList.remove("active"));
+            // Add "active" class to the clicked tab
+            tab.classList.add("active");
+          
+            const selectedCategory = tab.getAttribute("data-category");
+       
+        
+            // Show/hide course items based on the selected category
+            courseItems.forEach((item) => {
+                const courseCategory = item.getAttribute("data-category");
+                
+                
+                if (selectedCategory === "all" || selectedCategory === courseCategory) {
+                    item.style.display = "block"; // Show the matching courses
+                } else {
+                    item.style.display = "none"; // Hide the non-matching courses
+                }
+            });
+        });
+    });
+
+            
+            });
+
+    //         const searchInput = document.getElementById("searchInput");
+    //         const searchButton = document.getElementById("searchButton"); 
+
+    //         // Declare courseItems variable in an accessible scope
+    //         let courseItems = document.querySelectorAll(".course-card");
+
+    //      // Search functionality triggered by the search button
+    // searchButton.addEventListener("click", function(event) {
+    //     event.preventDefault(); // Prevent the form from submitting
+
+    //     const searchValue = searchInput.value.toLowerCase();
+
+    //     console.log(courseItems);
+
+    //     courseItems.forEach((item) => {
+    //         const courseTitle = item.querySelector(".card-title").textContent.toLowerCase();
+    //         const courseDescription = item.querySelector(".card-text").textContent.toLowerCase();
+
+    //         if (
+    //             courseTitle.includes(searchValue) ||
+    //             courseDescription.includes(searchValue)
+    //         ) {
+    //             item.style.display = "block"; // Show matching courses
+    //         } else {
+    //             item.style.display = "none"; // Hide non-matching courses
+    //         }
+    //     });
+    // });
+
+
+      </script>
+    </body>
+    
+    </html>
