@@ -1684,3 +1684,31 @@ section {
   background: #fff;
   color: #47536e;
 }
+
+
+/* Set up small 3D rotation without shrinking */
+.parallax-card {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.parallax-card a {
+  display: block;
+  transition: transform 0.5s;
+}
+
+.parallax-card:hover a {
+  transform: rotateY(10deg);
+}
+
+
+#maincourses .card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines to display */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
