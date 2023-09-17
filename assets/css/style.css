@@ -616,6 +616,60 @@ section {
 # Gallery
 --------------------------------------------------------------*/
 
+.gallery {
+  overflow: hidden;
+  position: relative;
+}
+
+.box-shape-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.box-shape {
+  max-width: 100%;
+  height: auto;
+}
+
+.stacked-images {
+  display: flex; /* Enable flex layout to stack images horizontally */
+  position: absolute; 
+  top: 1cm; /* Position the images absolutely inside the .box-shape-container */
+  bottom: 0cm; /* Adjust top positioning as needed */
+  left: 8cm; /* Adjust left positioning as needed */
+  overflow: hidden; /* Hide overflow to show one image at a time */
+  animation: fadeOut 16s linear infinite; /* Define a fade-out animation */
+}
+
+.stacked-image {
+  width: 30vw; /* Adjust image width as needed */
+  height: 60vh; /* Maintain aspect ratio */
+  opacity: 1; /* Start with full opacity */
+}
+
+/* Keyframes for the fade-out animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1; /* Fully visible */
+  }
+  20% {
+    opacity: 1; /* Stay fully visible */
+  }
+  40% {
+    opacity: 0.25; /* Fade out */
+  }
+  60% {
+    opacity: 0; /* Stay hidden */
+  }
+  80% {
+    opacity: 0.25; /* Stay hidden */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/

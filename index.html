@@ -22,6 +22,11 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<!-- Add Flickity CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css">
+
+<!-- Add Flickity JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -351,32 +356,87 @@
 
         <!-- </div> -->
       </div>
+
+
+
+
+
+
       <section id="gallery" class="gallery">
         <div class="row">
-          <div class="col-md-6" style="padding-left: 0;">
-            <!-- Container for the box_shape image -->
-            <div class="box-shape-container">
-              <img src="uploads/box_shape.png" alt="Box Shape" class="box-shape" style="max-width: 100%; height: auto;">
+          <div class="col-md-6 box-shape-container">
+            <!-- Original box_shape.png image -->
+            <img src="uploads/box_shape.png" alt="Box Shape" class="box-shape">
+            <!-- Stacking images on top -->
+            <div class="stacked-images">
+              <!-- Add your carousel images here -->
+              <img src="assets/img/associates/IIT_Madras_Logo.svg.png" class="stacked-image" style="padding-top: 0cm; ">
+              
+              <!-- Add more carousel images as needed -->
             </div>
           </div>
-          
-             
-    <div class=" col-md-6">
-                <div class="section-title">
-                  <h2>Associates</h2>
-                  <p id="text-content">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga
-                    eum
-                    quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
-                    alias
-                    ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
-              </div>
-            
+      
+          <div class="col-md-6">
+            <div class="section-title">
+              <h2>Associates</h2>
+              <p id="text-content">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga
+                eum
+                quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                alias
+                ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+          </div>
         </div>
       </section>
+      
 
-      </div>
-    </section>
+
+
+
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll(".stacked-image");
+  let currentIndex = 0;
+
+  function showNextImage() {
+    // Hide all images
+    images.forEach((image) => {
+      image.classList.add("hide");
+    });
+
+    // Show the current image
+    images[currentIndex].classList.remove("hide");
+
+    // Move to the next image after a delay (adjust timing as needed)
+    currentIndex = (currentIndex + 1) % images.length;
+
+    setTimeout(() => {
+      showNextImage(); // Change image after a short delay
+    }, 2000); // Change image every 2 seconds (2000 milliseconds)
+  }
+
+  // Start the carousel
+  showNextImage();
+});
+ 
+      </script>
+      
+
+
+
+
+      
+      
+      
+      
+       
+      
+
+      
+      
+    
+    
 
 
 
