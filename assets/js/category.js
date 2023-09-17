@@ -1,6 +1,9 @@
-$(document).ready(function() {
-    $("#kids-link").click(function(e) {
-        e.preventDefault(); // Prevent the default behavior of the anchor link
-        $(".filter-tab[data-category='kids']").click(); // Trigger a click event on the "Kids" tab
-    });
-});
+// Get the URL parameter
+const urlParams = new URLSearchParams(window.location.search);
+const categoryParam = urlParams.get('category');
+
+// Check if the categoryParam is 'kids' and activate the tab
+if (categoryParam === 'kids') {
+    $(".filter-tab[data-category='kids']").addClass('active');
+}
+

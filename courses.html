@@ -412,6 +412,25 @@
 
 
       </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const categoryParam = urlParams.get('category');
+    
+            if (categoryParam) {
+                // Find the tab element with the matching category and trigger a click event
+                const filterTabs = document.querySelectorAll(".filter-tab");
+                filterTabs.forEach((tab) => {
+                    if (tab.getAttribute("data-category") === categoryParam) {
+                        tab.click(); // Simulate a click on the matching tab
+                    }
+                });
+            }
+        });
+    </script>
+    
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/category.js"></script>
     </body>
     
     </html>
