@@ -615,50 +615,60 @@ section {
 /*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
+
 .gallery {
   overflow: hidden;
-}
-
-.gallery .swiper-slide {
-  transition: 0.3s;
-}
-
-.gallery .swiper-pagination {
-  margin-top: 20px;
   position: relative;
 }
 
-.gallery .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #5777ba;
+.box-shape-container {
+  position: relative;
+  overflow: hidden;
 }
 
-.gallery .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #5777ba;
+.box-shape {
+  max-width: 100%;
+  height: auto;
 }
 
-.gallery .swiper-slide-active {
-  text-align: center;
+.stacked-images {
+  display: flex; /* Enable flex layout to stack images horizontally */
+  position: absolute; 
+  top: 1cm; /* Position the images absolutely inside the .box-shape-container */
+  bottom: 0cm; /* Adjust top positioning as needed */
+  left: 8cm; /* Adjust left positioning as needed */
+  overflow: hidden; /* Hide overflow to show one image at a time */
+  animation: fadeOut 16s linear infinite; /* Define a fade-out animation */
 }
 
-@media (min-width: 992px) {
-  .gallery .swiper-wrapper {
-    padding: 40px 0;
+.stacked-image {
+  width: 30vw; /* Adjust image width as needed */
+  height: 60vh; /* Maintain aspect ratio */
+  opacity: 1; /* Start with full opacity */
+}
+
+/* Keyframes for the fade-out animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1; /* Fully visible */
   }
-
-  .gallery .swiper-slide-active {
-    border: 6px solid #5777ba;
-    padding: 4px;
-    background: #fff;
-    z-index: 1;
-    transform: scale(1.2);
-    margin-top: 10px;
-    border-radius: 25px;
+  20% {
+    opacity: 1; /* Stay fully visible */
+  }
+  40% {
+    opacity: 0.25; /* Fade out */
+  }
+  60% {
+    opacity: 0; /* Stay hidden */
+  }
+  80% {
+    opacity: 0.25; /* Stay hidden */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
   }
 }
+
 
 /*--------------------------------------------------------------
 # Testimonials
