@@ -3,98 +3,98 @@ session_start();
 
 echo ("<script>console.log('PHP: " . $_SESSION["coursename"] . "');</script>");
 
-// if (!isset($_SESSION["courseName"])) {
-//   $_SESSION["courseName"] = "";
-//   $_SESSION["firstName"] = "";
-//   $_SESSION["lastName"] = "";
-//   $_SESSION["dob"] = "";
-//   $_SESSION["gender"] = ""; 
-//   $_SESSION["email"] = "";
-//   $_SESSION["countryCode"] = "";
-//   $_SESSION["phoneNumber"] = "";
-//   $_SESSION["role"] = "";
-//   $_SESSION["org"] = "";
-//   $_SESSION["address1"] = "";
-//   $_SESSION["address2"] = "";
-//   $_SESSION["city"] = "";
-//   $_SESSION["region"] = "";
-//   $_SESSION["zip"] = "";
-//   $_SESSION["country"] = "";
-//   $_SESSION["voucher"] = "";
-//   // Add more session variables for other form fields
-// }
+if (!isset($_SESSION["courseName"])) {
+  $_SESSION["courseName"] = "";
+  $_SESSION["firstName"] = "";
+  $_SESSION["lastName"] = "";
+  $_SESSION["dob"] = "";
+  $_SESSION["gender"] = ""; 
+  $_SESSION["email"] = "";
+  $_SESSION["countryCode"] = "";
+  $_SESSION["phoneNumber"] = "";
+  $_SESSION["role"] = "";
+  $_SESSION["org"] = "";
+  $_SESSION["address1"] = "";
+  $_SESSION["address2"] = "";
+  $_SESSION["city"] = "";
+  $_SESSION["region"] = "";
+  $_SESSION["zip"] = "";
+  $_SESSION["country"] = "";
+  $_SESSION["voucher"] = "";
+  // Add more session variables for other form fields
+}
 
-// // Check if the form has been submitted
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//   // Capture the form data
-//   $courseName = $_POST["Dropdown1"];
-//   $firstName = $_POST["Name_First"];
-//   $lastName = $_POST["Name_Last"];
-//   $dob = $_POST["Date"];
-//   $gender = $_POST["Radio"]; 
-//   $email = $_POST["Email"];
-//   $countryCode = $_POST["PhoneNumber_countrycodeval"];
-//   $phone = $_POST["PhoneNumber_countrycode"];
-//   $role = $_POST["Dropdown"];
-//   $org = $_POST["SingleLine1"];
-//   $ad1 = $_POST["Address_AddressLine1"];
-//   $ad2= $_POST["Address_AddressLine2"];
-//   $city = $_POST["Address_City"];
-//   $region = $_POST["Address_Region"];
-//   $zip = $_POST["Address_ZipCode"];
-//   $country = $_POST["Address_Country"];
-//   $voucher = $_POST["SingleLine2"];
-//   // Capture other form fields in the same way
+// Check if the form has been submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // Capture the form data
+  $courseName = $_POST["Dropdown1"];
+  $firstName = $_POST["Name_First"];
+  $lastName = $_POST["Name_Last"];
+  $dob = $_POST["Date"];
+  $gender = $_POST["Radio"]; 
+  $email = $_POST["Email"];
+  $countryCode = $_POST["PhoneNumber_countrycodeval"];
+  $phone = $_POST["PhoneNumber_countrycode"];
+  $role = $_POST["Dropdown"];
+  $org = $_POST["SingleLine1"];
+  $ad1 = $_POST["Address_AddressLine1"];
+  $ad2= $_POST["Address_AddressLine2"];
+  $city = $_POST["Address_City"];
+  $region = $_POST["Address_Region"];
+  $zip = $_POST["Address_ZipCode"];
+  $country = $_POST["Address_Country"];
+  $voucher = $_POST["SingleLine2"];
+  // Capture other form fields in the same way
 
-//     // Handle file upload
-//    // Handle file upload
-//   if (isset($_FILES["FileUpload"])) {
-//     $uploadDirectory = "uploads/"; // Change to your desired upload directory
-//     $uploadedFileName = $_FILES["FileUpload"]["name"];
-//     $fileUploadPath = $uploadDirectory . $uploadedFileName;
+    // Handle file upload
+   // Handle file upload
+  if (isset($_FILES["FileUpload"])) {
+    $uploadDirectory = "uploads/"; // Change to your desired upload directory
+    $uploadedFileName = $_FILES["FileUpload"]["name"];
+    $fileUploadPath = $uploadDirectory . $uploadedFileName;
     
-//     if (move_uploaded_file($_FILES["FileUpload"]["tmp_name"], $fileUploadPath)) {
-//       // Store the file path in a session variable
-//       $_SESSION["uploadedFilePath"] = $fileUploadPath;
-//     }
-//   }
+    if (move_uploaded_file($_FILES["FileUpload"]["tmp_name"], $fileUploadPath)) {
+      // Store the file path in a session variable
+      $_SESSION["uploadedFilePath"] = $fileUploadPath;
+    }
+  }
 
-//     // Handle file upload
-//     $uploadedFileName1 = $_FILES["FileUpload1"]["name"];
-//     $fileUploadPath1 = $uploadDirectory . $uploadedFileName1;
-//     move_uploaded_file($_FILES["FileUpload1"]["tmp_name"], $fileUploadPath1);
+    // Handle file upload
+    $uploadedFileName1 = $_FILES["FileUpload1"]["name"];
+    $fileUploadPath1 = $uploadDirectory . $uploadedFileName1;
+    move_uploaded_file($_FILES["FileUpload1"]["tmp_name"], $fileUploadPath1);
     
-//     // Store the file path in a session variable
-//     $_SESSION["uploadedFilePath1"] = $fileUploadPath1;
+    // Store the file path in a session variable
+    $_SESSION["uploadedFilePath1"] = $fileUploadPath1;
   
-//   // Store the form data in session variables
-//   $_SESSION["courseName"] = $courseName;
-//   $_SESSION["firstName"] = $firstName;
-//   $_SESSION["lastName"] = $lastName;
-//   $_SESSION["dob"] = $dob;
-//   $_SESSION["gender"] = $gender; 
-//   $_SESSION["email"] = $email;
-//   $_SESSION["countryCode"] = $countryCode;
-//   $_SESSION["phoneNumber"] = $phone;
-//   $_SESSION["role"] = $role;
-//   $_SESSION["org"] = $org;
-//   $_SESSION["address1"] = $ad1;
-//   $_SESSION["address2"] = $ad2;
-//   $_SESSION["city"] = $city;
-//   $_SESSION["region"] = $region;
-//   $_SESSION["zip"] = $zip;
-//   $_SESSION["country"] = $country;
-//   $_SESSION["voucher"] = $voucher;
-//   // Store other form data in session variables
+  // Store the form data in session variables
+  $_SESSION["courseName"] = $courseName;
+  $_SESSION["firstName"] = $firstName;
+  $_SESSION["lastName"] = $lastName;
+  $_SESSION["dob"] = $dob;
+  $_SESSION["gender"] = $gender; 
+  $_SESSION["email"] = $email;
+  $_SESSION["countryCode"] = $countryCode;
+  $_SESSION["phoneNumber"] = $phone;
+  $_SESSION["role"] = $role;
+  $_SESSION["org"] = $org;
+  $_SESSION["address1"] = $ad1;
+  $_SESSION["address2"] = $ad2;
+  $_SESSION["city"] = $city;
+  $_SESSION["region"] = $region;
+  $_SESSION["zip"] = $zip;
+  $_SESSION["country"] = $country;
+  $_SESSION["voucher"] = $voucher;
+  // Store other form data in session variables
 
-//   echo ("<script>console.log('PHP: " . $_SESSION["courseName"] . "');</script>");
-//   echo ("<script>console.log('PHP: " . $uploadedFileName . "');</script>");
-//   echo ("<script>console.log('File: " . $_SESSION["uploadedFilePath"] . "');</script>");
+  echo ("<script>console.log('PHP: " . $_SESSION["courseName"] . "');</script>");
+  echo ("<script>console.log('PHP: " . $uploadedFileName . "');</script>");
+  echo ("<script>console.log('File: " . $_SESSION["uploadedFilePath"] . "');</script>");
   
-//   // Redirect to your PHP page (optional)
-//  header("Location: verification.php"); // Replace with your actual PHP file URL
-// exit;
-// }
+  // Redirect to your PHP page (optional)
+ header("Location: verification.php"); // Replace with your actual PHP file URL
+exit;
+}
 
 ?>
 <!DOCTYPE html>
@@ -193,7 +193,7 @@ echo ("<script>console.log('PHP: " . $_SESSION["coursename"] . "');</script>");
   </section><!-- End Breadcrumbs -->
 
 <main id="register">
-<div class="zf-templateWidth"><form action='https://forms.zohopublic.com/it177/form/RegistrationForm/formperma/28P6aSqNTn733eqfofgpUCc5vWS_VU1C-qsJXG0T1qM/htmlRecords/submit' name='form' method='POST' onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();' accept-charset='UTF-8' enctype='multipart/form-data' id='form'><input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+<div class="zf-templateWidth"><form action='https://forms.zohopublic.com/it177/form/RegistrationForm/formperma/28P6aSqNTn733eqfofgpUCc5vWS_VU1C-qsJXG0T1qM/htmlRecords/submit' name='form' method='POST' onSubmit='return submitToCRM();' accept-charset='UTF-8' enctype='multipart/form-data' id='form'><input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
 <input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
 <input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
 <div class="zf-templateWrapper"><!---------template Header Starts Here---------->
@@ -209,9 +209,9 @@ Course Name
 </label>
 <div class="zf-tempContDiv">
 <select class="zf-form-sBox" name="Dropdown1" checktype="c1">
-<option selected="true" value="-Select-">-Select-</option>
-<option value="Design&#x20;Your&#x20;Website&#x20;Beginner">Design Your Website Beginner</option>
-<option value="Little&#x20;Coder&#x20;Beginner">Little Coder Beginner</option>
+<option value="-Select-" <?php echo (isset($_SESSION['coursename']) && $_SESSION['coursename'] === '-Select-') ? 'selected' : ''; ?>>-Select-</option>
+            <option value="Design Your Website Beginner" <?php echo (isset($_SESSION['coursename']) && $_SESSION['coursename'] === 'Design Your Website Beginner') ? 'selected' : ''; ?>>Design Your Website Beginner</option>
+            <option value="Little&#x20;Coder&#x20;Beginner">Little Coder Beginner</option>
 <option value="Junior&#x20;Python&#x20;Developer&#x20;Beginner">Junior Python Developer Beginner</option>
 <option value="Artificial&#x20;Intelligence">Artificial Intelligence</option>
 <option value="Javascript&#x20;Game&#x20;Developer&#x20;Beginner">Javascript Game Developer Beginner</option>
@@ -739,11 +739,23 @@ Voucher
   <script src="assets/js/data.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <script type="text/javascript">var zf_DateRegex = new RegExp("^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-](Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$");
-    var zf_MandArray = [ "Dropdown1", "Name_First", "Name_Last", "Date", "Radio", "Email", "PhoneNumber_countrycode", "PhoneNumber_countrycodeVal", "Dropdown", "SingleLine1", "Address_AddressLine1", "Address_City", "Address_ZipCode", "Address_Country", "FileUpload"]; 
-    var zf_FieldArray = [ "Dropdown1", "Name_First", "Name_Last", "Date", "Radio", "Email", "PhoneNumber_countrycode", "PhoneNumber_countrycodeVal", "Dropdown", "SingleLine1", "Address_AddressLine1", "Address_AddressLine2", "Address_City", "Address_Region", "Address_ZipCode", "Address_Country", "SingleLine2", "FileUpload", "FileUpload1"]; 
-    var isSalesIQIntegrationEnabled = false;
-    var salesIQFieldsArray = [];</script>
+  <script type="text/javascript">
+    function submitToCRM() {
+		var zf_DateRegex = new RegExp("^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-](Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$");
+var zf_MandArray = [ "Dropdown1", "Name_First", "Name_Last", "Date", "Radio", "Email", "PhoneNumber_countrycode", "PhoneNumber_countrycodeVal", "Dropdown", "SingleLine1", "Address_AddressLine1", "Address_City", "Address_ZipCode", "Address_Country", "FileUpload"]; 
+var zf_FieldArray = [ "Dropdown1", "Name_First", "Name_Last", "Date", "Radio", "Email", "PhoneNumber_countrycode", "PhoneNumber_countrycodeVal", "Dropdown", "SingleLine1", "Address_AddressLine1", "Address_AddressLine2", "Address_City", "Address_Region", "Address_ZipCode", "Address_Country", "SingleLine2", "FileUpload", "FileUpload1"]; 
+var isSalesIQIntegrationEnabled = false;
+var salesIQFieldsArray = [];
+        
+        // After successfully submitting to CRM, redirect to the verification page
+        window.location.href = 'verification.php'; // Replace with the correct path to your verification page
+        
+        // Return false to prevent the form from submitting through its default action
+        return false;
+    }
+</script>
+
+
 
 </body>
 

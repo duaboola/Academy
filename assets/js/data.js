@@ -1741,7 +1741,7 @@ const courses = [
       },
       {
         id: 34,
-        title: "CAREER BACK TO WOMEN : CERTIFIED PROFESSIONAL IN BASICS OF ARTIFICIAL INTELLIGENCE / MACHINE LEARNING",
+        title: "CERTIFIED PROFESSIONAL IN BASICS OF ARTIFICIAL INTELLIGENCE / MACHINE LEARNING",
         description: "The two course track is targeted at professionals, practicing engineers and scientists who are interested in learning and understanding AI / ML in sufficient depth and breadth. At the end of this program, participants will develop structured thinking approach to transition from data to problem definition. Python, an open source tool will be introduced in depth. Important and commonly used machine learning and AI algorithms will be described in detail. Laboratory sessions will be conducted as part of each module with the expectation that the participants will be able to apply these algorithms on realistic data • Introduce the participants to the field of ML/AI background and key concepts • Introduce the participants to Python an easy to use tool for high level data analytics • Introduce the participants to a comprehensive overview of linear algebra, statistics and optimization concepts critical concepts for the understanding of ML/AI algorithms • Introduce the participants to in-depth explanation of the most used ML/AI algorithms supported by hands-on work in Python from an application viewpoint • Introduce the participants to real-life applications of ML/AI Techniques a case study approach.",
         cover:"assets/img/3784896.jpg",
         category:"it",
@@ -1863,7 +1863,7 @@ const courses = [
       },
       {
         id: 36,
-        title: "CAREER BACK TO WOMEN : CERTIFIED PROFESSIONAL IN ADVANCED COURSE IN DATA SCIENCE AND BIG DATA ANALYTICS",
+        title: "CERTIFIED PROFESSIONAL IN ADVANCED COURSE IN DATA SCIENCE AND BIG DATA ANALYTICS",
         description: "Course is targeted at learners who are interested in learning and understanding data science and what big data is all about in sufficient depth and breadth. The course will provide an overview of how to pose meaningful data analytics problems for real-life applications. At the end of the course, participants will develop a structured thinking approach to transition from data to data science problem definitions and also learn to address challenges in handling Big Data. • Introduce the participants to Python an easy to use tool for high level data analytics • Introduce the participants to a comprehensive overview of linear algebra, statistics and optimization concepts critical concepts for the understanding of data science • Introduce the participants to in-depth explanation of data science algorithms supported by hands-on work in Python from an application viewpoint • Introduce participants to visualization • Introduce the participants to the field of Big Data background and key concepts • Introduce the participants to real-life applications of data science a case study approach.",
         cover:"assets/img/3784896.jpg",
         category:"it",
@@ -1908,7 +1908,7 @@ const courses = [
       },
       {
         id: 37,
-        title: "CAREER BACK TO WOMEN : CERTIFIED PROFESSIONAL IN BASICS OF DATA SCIENCE AND BIG DATA ANALYTICS",
+        title: "CERTIFIED PROFESSIONAL IN BASICS OF DATA SCIENCE AND BIG DATA ANALYTICS",
         description: "Course is targeted at learners who are interested in learning and understanding data science and what big data is all about in sufficient depth and breadth. The course will provide an overview of how to pose meaningful data analytics problems for real-life applications. At the end of the course, participants will develop a structured thinking approach to transition from data to data science problem definitions and also learn to address challenges in handling Big Data.",
         cover:"assets/img/3784896.jpg",
         category:"it",
@@ -1954,7 +1954,7 @@ const courses = [
       },
       {
         id: 38,
-        title: "CAREER BACK TO WOMEN : CERTIFIED PROFESSIONAL IN ADVANCED COURSE IN SOFTWARE ENGINEERING AND PROGRAMMING TOOLS",
+        title: "CERTIFIED PROFESSIONAL IN ADVANCED COURSE IN SOFTWARE ENGINEERING AND PROGRAMMING TOOLS",
         description: "Course is targeted at learners who are interested in learning and understanding Computational Thinking, Algorithms & Python with Mongo/DB like a Professional! Start from the basics and go all the way to creating your own applications, Guvi platform for hands-on coding & feedback is key differentiator.",
         cover:"assets/img/3784896.jpg",
         category:"it",
@@ -1991,7 +1991,7 @@ const courses = [
       },
       {
         id: 39,
-        title: "CAREER BACK TO WOMEN : CERTIFIED PROFESSIONAL IN BASICS OF SOFTWARE ENGINEERING AND PROGRAMMING TOOLS",
+        title: "CERTIFIED PROFESSIONAL IN BASICS OF SOFTWARE ENGINEERING AND PROGRAMMING TOOLS",
         description: "Course is targeted at learners who are interested in learning and understanding Computational Thinking, Algorithms & Python with Mongo/DB like a Professional! Start from the basics and go all the way to creating your own applications, Guvi platform for hands-on coding & feedback is key differentiator.",
         cover:"assets/img/3784896.jpg",
         category:"it",
@@ -2024,7 +2024,7 @@ const courses = [
       },
       {
         id: 40,
-        title: "CAREER BACK TO WOMEN : CERTIFIED PROFESSIONAL IN ADVANCED COURSE IN CYBER SECURITY AND DIGITAL FORENSICS",
+        title: "CERTIFIED PROFESSIONAL IN ADVANCED COURSE IN CYBER SECURITY AND DIGITAL FORENSICS",
         description: "It is comprehensive course to learn the most effective steps to prevent attacks and detect adversaries with actionable techniques that one can directly apply when they get back to work. As Certified Cyber professionals, the participant will learn tips and tricks from the best of the experts from a mix of industry & academia, so that they can win the battle against the wide range of cyber adversaries that want to harm the enterprises IT environment",
         cover:"assets/img/3784896.jpg",
         category:"it",
@@ -2057,7 +2057,7 @@ const courses = [
       },
       {
         id: 41,
-        title: "CAREER BACK TO WOMEN : CERTIFIED PROFESSIONAL IN BASICS OF CYBER SECURITY",
+        title: "CERTIFIED PROFESSIONAL IN BASICS OF CYBER SECURITY",
         description: "It is a comprehensive course to learn the most effective steps to prevent attacks and detect adversaries with actionable techniques that one can directly apply when they get back to work.As Certified Cyber professionals, the participant will learn tips and tricks from the best of the experts from a mix of industry & academia, so that they can win the battle against the wide range of cyber adversaries that want to harm the enterprises IT environment",
         cover:"assets/img/3784896.jpg",
         category:"it",
@@ -2093,7 +2093,7 @@ const courses = [
       },
       {
         id: 42,
-        title: "CAREER BACK TO WOMEN : CERTIFIED PROFESSIONAL IN ADVANCED COURSE IN ARTIFICIAL INTELLIGENCE / MACHINE LEARNING",
+        title: "CERTIFIED PROFESSIONAL IN ADVANCED COURSE IN ARTIFICIAL INTELLIGENCE / MACHINE LEARNING",
         description: "The two course track is targeted at professionals, practicing engineers and scientists who are interested in learning and understanding AI / ML in sufficient depth and breadth. At the end of this program, participants will develop structured thinking approach to transition from data to problem definition. Python, an open source tool will be introduced in depth. Important and commonly used machine learning and AI algorithms will be described in detail. Laboratory sessions will be conducted as part of each module with the expectation that the participants will be able to apply these algorithms on realistic data • Introduce the participants to the field of ML/AI background and key concepts • Introduce the participants to Python an easy to use tool for high level data analytics • Introduce the participants to a comprehensive overview of linear algebra, statistics and optimization concepts critical concepts for the understanding of ML/AI algorithms • Introduce the participants to in-depth explanation of the most used ML/AI algorithms supported by hands-on work in Python from an application viewpoint • Introduce the participants to real-life applications of ML/AI Techniques a case study approach.",
         cover:"assets/img/3784896.jpg",
         category:"it",
@@ -2130,7 +2130,7 @@ const courses = [
       },
       {
         id: 43,
-        title: "CAREER BACK TO WOMEN : CERTIFIED PROFESSIONAL BACK TO TECHNICAL TRACK (BTCUBE)",
+        title: "CERTIFIED PROFESSIONAL BACK TO TECHNICAL TRACK (BTCUBE)",
         description: "This Career Back 2 Women (CB2Women) programme is aimed at the women professionals who had a job in IT industry, but had to leave the same for some reason including pregnancy or taking care of aged parents / in-laws / sick people etc. to return to IT career with a bang. FISST has database with over 4 lac women, in various domain and expressed willingness to get trained into new areas to return to work & earn.Back to Tech Track (BTCUBE) IT foundation module All Returning Professionals will have to undertake this and pass the exam to get to any of the specialization they opt to get back to industry. This is aimed at giving a complete update on the happenings in the IT industry in last 10 years essentially covering latest Jargons, Tools, Techniques, Security threats landscape etc. which will help them come to terms with existing technology / solutions etc. After BTCUBE IT Foundation module, there are 4 specialization stream / courses, available as choice to get back to work, will also be introduced with potential job opportunities and workload & demands for the women to choose the line they want to specialize. At the end of this module, a test will be conducted on Foundation Module + some basic testing of the line of specialization they choose.",
         cover:"assets/img/3784896.jpg",
         category:"it",
