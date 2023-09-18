@@ -135,9 +135,9 @@ echo ("<script>console.log('PHP: " . $_SESSION["coursename"] . "');</script>");
     <section>
   
       <div class="container">
-        <input type="text" id="email" value="example@example.com" readonly>
-        <input type="text" id="phone" value="123-456-7890" readonly>
-        <button id="sendCodeBtn" onclick="showOTPFields()">Send Code</button>
+      <input type="text" id="email" value="<?php echo isset($_SESSION['email']) ? $_SESSION['email'] : ''; ?>" readonly>
+    <input type="text" id="phone" value="<?php echo isset($_SESSION['phoneNumber']) ? $_SESSION['phoneNumber'] : ''; ?>" readonly>
+     <button id="sendCodeBtn" onclick="showOTPFields()">Send Code</button>
         <div id="otpFields" class="hidden">
             <input type="text" id="emailOTP" placeholder="Enter OTP for Email">
             <input type="text" id="phoneOTP" placeholder="Enter OTP for Phone">
