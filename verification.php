@@ -1,7 +1,6 @@
 <?php
 session_start();
-echo ("<script>console.log('PHP: " . $_SESSION["coursename"] . "');</script>");
-
+echo ("<script>console.log('PHP: " . $_SESSION["email"] . "');</script>");
 ?>
 
 <!DOCTYPE html>

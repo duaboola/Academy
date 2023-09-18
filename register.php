@@ -193,7 +193,7 @@ exit;
   </section><!-- End Breadcrumbs -->
 
 <main id="register">
-<div class="zf-templateWidth"><form action='https://forms.zohopublic.com/it177/form/RegistrationForm/formperma/28P6aSqNTn733eqfofgpUCc5vWS_VU1C-qsJXG0T1qM/htmlRecords/submit' name='form' method='POST' onSubmit='return submitToCRM();' accept-charset='UTF-8' enctype='multipart/form-data' id='form'><input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+<div class="zf-templateWidth"><form action='https://forms.zohopublic.com/it177/form/RegistrationForm/formperma/28P6aSqNTn733eqfofgpUCc5vWS_VU1C-qsJXG0T1qM/htmlRecords/submit' name='form' method='POST' onSubmit='javascript:document.charset="UTF-8";return zf_ValidateAndSubmit();' accept-charset='UTF-8' enctype='multipart/form-data' id='form'><input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
 <input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
 <input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
 <div class="zf-templateWrapper"><!---------template Header Starts Here---------->
@@ -739,6 +739,15 @@ Voucher
   <script src="assets/js/data.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+  <script type="text/javascript">
+	var zf_DateRegex = new RegExp("^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-](Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$");
+var zf_MandArray = [ "Dropdown1", "Name_First", "Name_Last", "Date", "Radio", "Email", "PhoneNumber_countrycode", "PhoneNumber_countrycodeVal", "Dropdown", "SingleLine1", "Address_AddressLine1", "Address_City", "Address_ZipCode", "Address_Country", "FileUpload"]; 
+var zf_FieldArray = [ "Dropdown1", "Name_First", "Name_Last", "Date", "Radio", "Email", "PhoneNumber_countrycode", "PhoneNumber_countrycodeVal", "Dropdown", "SingleLine1", "Address_AddressLine1", "Address_AddressLine2", "Address_City", "Address_Region", "Address_ZipCode", "Address_Country", "SingleLine2", "FileUpload", "FileUpload1"]; 
+var isSalesIQIntegrationEnabled = false;
+var salesIQFieldsArray = [];
+window.location.href = 'verification.php';
+return true;
+  </script>
   <script type="text/javascript">
     function submitToCRM() {
 		var zf_DateRegex = new RegExp("^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-](Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$");
