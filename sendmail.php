@@ -25,7 +25,6 @@ if (isset($_POST['send'])) {
         $mail->SMTPAuth = true;
         
         $mail->Username = "it@mcindeez.com";
-        $mail->Password = "ijghmrlslyoizkmg";
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
